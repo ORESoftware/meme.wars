@@ -1,0 +1,4 @@
+https://www.smashingmagazine.com/2018/09/pwa-angular-6/
+https://medium.com/dailyjs/goodbye-electron-hello-desktop-pwas-f316b8f39882
+https://developers.google.com/drive/api/v3/about-sdk
+https://www.xda-developers.com/progressive-web-apps-chrome-how-to/

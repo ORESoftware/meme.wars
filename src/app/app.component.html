@@ -1,22 +1,83 @@
 
-<router-outlet></router-outlet>
+<!--<router-outlet>-->
 
-<mat-toolbar  color="primary">
-  <mat-toolbar-row>
-    <span>JS-jargon</span>
-  </mat-toolbar-row>
-</mat-toolbar>
-<main>
-  <mat-card *ngFor="let item of items">
-    <mat-card-header>
-      <mat-card-title>{{item.name}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      {{item.description}}
-    </mat-card-content>
-    <mat-card-actions>
-      <a  mat-raised-button  href="{{item.url}}"  color="primary">More</a>
-    </mat-card-actions>
-  </mat-card>
-</main>
+<!--<mat-toolbar  color="primary">-->
+  <!--<mat-toolbar-row>-->
+    <!--<span>JS-jargon</span>-->
+  <!--</mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+<!--<main>-->
+  <!--<mat-card *ngFor="let item of items">-->
+    <!--<mat-card-header>-->
+      <!--<mat-card-title>{{item.name}}</mat-card-title>-->
+    <!--</mat-card-header>-->
+    <!--<mat-card-content>-->
+      <!--{{item.description}}-->
+    <!--</mat-card-content>-->
+    <!--<mat-card-actions>-->
+      <!--<a  mat-raised-button  href="{{item.url}}"  color="primary">More</a>-->
+    <!--</mat-card-actions>-->
+  <!--</mat-card>-->
+<!--</main>-->
+
+<h1>
+  hello angular table
+</h1>
+
+
+  <!--<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">-->
+
+    <!--&lt;!&ndash;- Note that these columns can be defined in any order.-->
+          <!--The actual rendered columns are set as a property on the row definition" &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Position Column &ndash;&gt;-->
+    <!--<ng-container matColumnDef="quarter">-->
+      <!--<th mat-header-cell *matHeaderCellDef> No. </th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.quarter}} </td>-->
+    <!--</ng-container>-->
+
+    <!--&lt;!&ndash; Name Column &ndash;&gt;-->
+    <!--<ng-container matColumnDef="time">-->
+      <!--<th mat-header-cell *matHeaderCellDef> Name </th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.time}} </td>-->
+    <!--</ng-container>-->
+
+    <!--&lt;!&ndash; Weight Column &ndash;&gt;-->
+    <!--<ng-container matColumnDef="team">-->
+      <!--<th mat-header-cell *matHeaderCellDef> Weight </th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.team}} </td>-->
+    <!--</ng-container>-->
+
+    <!--&lt;!&ndash; Symbol Column &ndash;&gt;-->
+    <!--<ng-container matColumnDef="play">-->
+      <!--<th mat-header-cell *matHeaderCellDef> Symbol </th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.play}} </td>-->
+    <!--</ng-container>-->
+
+    <!--&lt;!&ndash; Symbol Column &ndash;&gt;-->
+    <!--<ng-container matColumnDef="score">-->
+      <!--<th mat-header-cell *matHeaderCellDef> Symbol </th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.score}} </td>-->
+    <!--</ng-container>-->
+
+    <!--<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>-->
+    <!--<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>-->
+  <!--</table>-->
+
+
+
+<table>
+  <tr>
+    <th *ngFor="let col of header">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let play of dataSource">
+    <td *ngFor="let col of header">
+      {{play[col]}}
+    </td>
+  </tr>
+</table>
+
+<!--</router-outlet>-->
 

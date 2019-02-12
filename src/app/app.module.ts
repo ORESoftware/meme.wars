@@ -13,12 +13,17 @@ import { MatCardModule } from  '@angular/material/card';
 import { MatButtonModule } from  '@angular/material/button';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { RarebitsComponent } from './rarebits/rarebits.component';
+import { MatTableModule } from '@angular/material'
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RarebitsComponent
   ],
   imports: [
+    MatTableModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
